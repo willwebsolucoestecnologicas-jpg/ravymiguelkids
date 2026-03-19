@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ravy Miguel KIDS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Ravy Miguel <span>KIDS</span></h1>
+        </div>
+        <div class="cart-icon" onclick="toggleCart()">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Moda Infantil com Alegria e Conforto!</h2>
+        <p>Vista a magia da infância.</p>
+    </section>
+
+    <main>
+        <div class="products-grid" id="products-grid">
+            </div>
+    </main>
+
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-modal">
+            <button class="close-cart" onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+            <h2>Seu Carrinho</h2>
+            <div id="cart-items" class="cart-items">
+                </div>
+            <div class="cart-summary">
+                <h3>Total: R$ <span id="cart-total">0.00</span></h3>
+                
+                <div class="checkout-form">
+                    <label for="payment-method">Forma de Pagamento:</label>
+                    <select id="payment-method">
+                        <option value="PIX">PIX</option>
+                        <option value="Cartão de Crédito">Cartão de Crédito</option>
+                        <option value="Cartão de Débito">Cartão de Débito</option>
+                        <option value="À Vista (Dinheiro)">À Vista (Dinheiro)</option>
+                    </select>
+
+                    <label for="customer-name">Seu Nome:</label>
+                    <input type="text" id="customer-name" placeholder="Ex: Maria Silva">
+                    
+                    <button class="btn-checkout" onclick="finalizeOrder()">Finalizar no WhatsApp <i class="fa-brands fa-whatsapp"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><i class="fa-solid fa-location-dot"></i> Rua Marcionilio Francisco dos Santos 278, Cajazeiras - PB</p>
+        <p><i class="fa-brands fa-whatsapp"></i> (83) 99337-9142 | <i class="fa-regular fa-envelope"></i> anamariacz1997@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
