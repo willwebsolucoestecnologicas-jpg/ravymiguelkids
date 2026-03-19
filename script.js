@@ -62,7 +62,26 @@ function addToCart(id) {
     }
     
     updateCart();
-    toggleCart(); // Abre o modal ao adicionar para mostrar feedback
+    
+    // Mostra a notificação em vez de abrir o carrinho
+    showToast(); 
+}
+
+// Nova função para mostrar a notificação (Toast) e animar o carrinho
+function showToast() {
+    // Exibe o Toast
+    const toast = document.getElementById("toast");
+    toast.className = "toast show";
+    setTimeout(function(){ 
+        toast.className = toast.className.replace("show", ""); 
+    }, 3000);
+    
+    // Anima o ícone do carrinho para chamar atenção
+    const cartIcon = document.querySelector('.cart-icon');
+    cartIcon.classList.add('cart-bounce');
+    setTimeout(function(){ 
+        cartIcon.classList.remove('cart-bounce'); 
+    }, 300);
 }
 
 function updateQty(index, change) {
