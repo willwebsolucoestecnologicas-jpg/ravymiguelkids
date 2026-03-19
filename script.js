@@ -1,15 +1,85 @@
 // Dados simulados dos produtos
 const products = [
-    { id: 1, name: "Conjunto Verão Menino", price: 65.90, img: "https://via.placeholder.com/200x200?text=Produto+1", sizes: ["P", "M", "G"], colors: ["Azul", "Verde"] },
-    { id: 2, name: "Vestido Floral Menina", price: 89.90, img: "https://via.placeholder.com/200x200?text=Produto+2", sizes: ["1", "2", "3", "4"], colors: ["Rosa", "Amarelo"] },
-    { id: 3, name: "Camiseta Básica Kids", price: 35.00, img: "https://via.placeholder.com/200x200?text=Produto+3", sizes: ["4", "6", "8", "10"], colors: ["Branco", "Preto", "Azul"] },
-    { id: 4, name: "Bermuda Jeans", price: 55.00, img: "https://via.placeholder.com/200x200?text=Produto+4", sizes: ["2", "4", "6"], colors: ["Jeans Claro", "Jeans Escuro"] },
-    { id: 5, name: "Tênis Colorido", price: 110.00, img: "https://via.placeholder.com/200x200?text=Produto+5", sizes: ["22", "24", "26", "28"], colors: ["Multicolor"] },
-    { id: 6, name: "Macaquinho Estampado", price: 75.50, img: "https://via.placeholder.com/200x200?text=Produto+6", sizes: ["P", "M", "G"], colors: ["Estampa 1", "Estampa 2"] },
-    { id: 7, name: "Casaco de Lã Infantil", price: 120.00, img: "https://via.placeholder.com/200x200?text=Produto+7", sizes: ["4", "6", "8"], colors: ["Cinza", "Rosa", "Azul Marinho"] },
-    { id: 8, name: "Calça Legging", price: 40.00, img: "https://via.placeholder.com/200x200?text=Produto+8", sizes: ["2", "4", "6", "8"], colors: ["Preto", "Rosa Bebê"] },
-    { id: 9, name: "Pijama Animais", price: 59.90, img: "https://via.placeholder.com/200x200?text=Produto+9", sizes: ["P", "M", "G"], colors: ["Dinossauro", "Unicórnio"] },
-    { id: 10, name: "Kit 3 Laços de Cabelo", price: 25.00, img: "https://via.placeholder.com/200x200?text=Produto+10", sizes: ["Único"], colors: ["Sortidas"] }
+    { 
+        id: 1, 
+        name: "Conjunto Verão Menino", 
+        price: 65.90, 
+        img: "https://images.unsplash.com/photo-1519689680058-324335c77eba?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80", 
+        sizes: ["P", "M", "G"], 
+        colors: ["Azul", "Bege"] 
+    },
+    { 
+        id: 2, 
+        name: "Vestido Floral Menina", 
+        price: 89.90, 
+        img: "https://images.unsplash.com/photo-1518831959646-742c3a14ebf7?w=500&q=80", 
+        sizes: ["1", "2", "3", "4"], 
+        colors: ["Rosa", "Amarelo"] 
+    },
+    { 
+        id: 3, 
+        name: "Camiseta Básica Kids", 
+        price: 35.00, 
+        img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQkug8F-bSgmuFaaFD-1-3U-MpsIUCif0wMw&s", 
+        sizes: ["4", "6", "8", "10"], 
+        colors: ["Branco", "Preto", "Azul"] 
+    },
+    { 
+        id: 4, 
+        name: "Bermuda Jeans", 
+        price: 55.00, 
+        img: "https://outletespacohering.vtexassets.com/arquivos/ids/5848958-1440-auto/C4KB-1ASN-C5.webp?v=638933038792300000&quality=10", 
+        sizes: ["2", "4", "6"], 
+        colors: ["Jeans Claro", "Jeans Escuro"] 
+    },
+    { 
+        id: 5, 
+        name: "Tênis Colorido", 
+        price: 110.00, 
+        img: "https://www.criatividadematerna.com/cdn/shop/products/S2a1f562793c7427f9fd51f14b99991b28.jpg?v=1681520388", 
+        sizes: ["22", "24", "26", "28"], 
+        colors: ["Multicolor"] 
+    },
+    { 
+        id: 6, 
+        name: "Macaquinho Estampado", 
+        price: 75.50, 
+        img: "https://malwee.vtexassets.com/arquivos/ids/1042266-805-1010", 
+        sizes: ["P", "M", "G"], 
+        colors: ["Tucano", "Arara"] 
+    },
+    { 
+        id: 7, 
+        name: "Casaco de Lã Infantil", 
+        price: 120.00, 
+        img: "https://cdn.awsli.com.br/600x450/545/545706/produto/52556136/e1e26f072c.jpg", 
+        sizes: ["4", "6", "8"], 
+        colors: ["Creme", "Rosa Bebê"] 
+    },
+    { 
+        id: 8, 
+        name: "Calça Legging", 
+        price: 40.00, 
+        img: "https://malwee.vtexassets.com/arquivos/ids/506841-805-1010", 
+        sizes: ["2", "4", "6", "8"], 
+        colors: ["Cinza", "Preto"] 
+    },
+    { 
+        id: 9, 
+        name: "Pijama Animais", 
+        price: 59.90, 
+        img: "https://a-static.mlcdn.com.br/420x420/conjuntos-de-pijamas-de-animais-unissex-para-criancas-roupas-de-dormir-quentes-e-macias-para-o-none/aliexpress/2010139348/bd72f39bc9431636b97bb392e7d77bd5.jpeg", 
+        sizes: ["P", "M", "G"], 
+        colors: ["Coala", "Panda"] 
+    },
+    { 
+        id: 10, 
+        name: "Kit 3 Laços de Cabelo", 
+        price: 25.00, 
+        img: "https://img.elo7.com.br/product/685x685/5137ABD/kit-com-3-lacos-para-cabelos-6-5-cm-pronta-entrega-enfeites-para-cabelo-infantil.jpg", 
+        sizes: ["Único"], 
+        colors: ["Sortidas"] 
+    }
 ];
 
 let cart = [];
